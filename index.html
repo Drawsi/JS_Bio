@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+  <title>Analizator ADN</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    
+<section id="menu">
+
+    <input type="text" id="seq1" name="seq1" placeholder="Secventa 1" size="60px" 
+    style="font-size:2rem;height: 100px;margin-top:80px;margin-bottom:80px;">
+    <input type="text" id="seq2" name="seq1" placeholder="Secventa 2" size="60px" 
+    style="font-size:2rem;height: 100px; margin-bottom: 60px;">
+    <br>
+
+    <input type="number" id="pot" name="potrivire" placeholder="Potrivire">
+    <input type="number" id="nepot" name="nepotrivire" placeholder="Nepotrivire">
+    <input type="number" id="gap" name="gap" placeholder="Gap">
+
+    <a href="#Needleman">
+    <input type="submit" value="Proceseaza"
+    style="font-size: 2rem;height: 100px;width: 250px;" onclick="calculate_all()">
+    </a>
+
+</section>
+
+<div id="07b02207602203a02205006105a06e06204b03006506205203905802207d" style="height:450px;width:720px"></div>
+<section id="Needleman">
+  <h1 class="title">Needleman–Wunsch</h1>
+  <h2 id="dl" style="position: absolute; margin-left: 900px; margin-top: 10px;;">DL=</h2>
+  <h2 id="dh" style="position: absolute; margin-left: 900px; margin-top: 70px;">DH=</h2>
+
+  <table id="need" class="table-body">
+    <tr class="tbd"></tr>
+    <h1 id="ns1" style="position: absolute; margin-left: 900px; margin-top: 200px; font-size: 30px;">Prima secventa</h1>
+    <h1 id="ns2" style="position: absolute; margin-left: 900px; margin-top: 230px;font-size: 30px;">A doua secventa</h1>
+  </table>
+</section>
+
+<section id="Smith">
+  <h1 class="title">Smith-Watermann</h1>
+
+  <table id="smith" class="table-body">
+    <tr class="tbd">
+      <h1 id="ss1" style="position: absolute; margin-left: 900px; margin-top: 200px;font-size: 30px;">Prima secventa</h1>
+      <h1 id="ss2" style="position: absolute; margin-left: 900px; margin-top: 230px;font-size: 30px;">A doua secventa</h1></tr>
+  </table>
+</section>
+
+<section id="Beteringhe">
+  <h1 class="title">Adrian Beteringhe</h1>
+
+  <table id="bete" class="table-body">
+    <tr class="tbd">
+      <h1 id="bs1" style="position: absolute; margin-left: 900px; margin-top: 200px;font-size: 30px;">Prima secventa</h1>
+      <h1 id="bs2" style="position: absolute; margin-left: 900px; margin-top: 230px;font-size: 30px;">A doua secventa</h1></tr>
+  </table>
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+
+<script src="myScript.js"></script>
+</body>
+</html> 
